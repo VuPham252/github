@@ -20,5 +20,5 @@ int main(){
 				temp=i;
 		}
 	}
-		printf("Uoc chung lon nhat la %d",temp);
+	printf("Uoc chung lon nhat la %d",temp);
 }
