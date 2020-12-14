@@ -8,11 +8,17 @@ int main(){
 	for(int i=0;i<n;i++){
 		scanf("%d",&arr[i]);
 	}
-	int odd;
-	for(int i=0; i<n;i++){
-		if(arr[i]%2!=0)
+	int odd=0;
+	for(int i=n-1; i>=0;i--){
+		if(arr[i]%2!=0){
+		
 			odd=arr[i];
+			break;
+		}
 	}
+	if(odd==0)
+		printf("khong co so le");
+	else
 	printf("So le cuoi cung cua mang la: %d",odd);
 	
 }

@@ -8,12 +8,19 @@ int main(){
 	for(int i=0;i<n;i++){
 		scanf("%d",&arr[i]);
 	}
-	int num;
+	for(int i=0;i<n;i++){
+		if(arr[i]>0)
+			break;
+	}
+	int num=0;
 	for(int i=0;i<n;i++){
 		if(arr[i]<num&&arr[i]>0){
 			num=arr[i];
 		}
 		
 	}
-	printf("so duong nho nhat la %d", num);
+	if(num==0)
+		printf("khong co so duong");
+	else
+		printf("so duong nho nhat la %d", num);
 }
