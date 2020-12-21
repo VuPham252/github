@@ -4,7 +4,6 @@ bool find(int arr[],int a, int n){
 	for(int i=0;i<n;i++){
 		if(arr[i]==a){
 			return true;
-			break;
 		}
 	}
 	return false;
