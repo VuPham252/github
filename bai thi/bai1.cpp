@@ -4,14 +4,14 @@
 int main(){
 	
 	int a,b,c;
-	printf("nhap canh thu nhat: ");
+	printf("nhap canh thu 1: ");
 	scanf("%d",&a);
 	printf("nhap canh thu 2: ");
 	scanf("%d",&b);
 	printf("nhap canh thu 3: ");
 	scanf("%d",&c);
 
-	if(a+b>c&&b+c>a&&a+c>b){
+	if(a+b>c&&a-b<c&&b+c>a&&b-c<a&&a+c>b&&a-c<b){
 		int p=(a+b+c)/2;
 		float s=sqrt(p*(p-a)*(p-b)*(p-c));
 		printf("dien tich tam giac la %.2f",s);
