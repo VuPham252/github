@@ -12,7 +12,7 @@ void upperCase(char str[]){
 int main(){
 	char str[100];
 	printf("Enter string: ");
-	scanf("%[^\n]",str);
+	gets(str);
 	upperCase(str);
 	printf("Upper Case: %s",str);
 	
